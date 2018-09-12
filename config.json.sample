@@ -1,0 +1,17 @@
+{
+  "AWS_ORGANIZATIONS": {
+    "name": "My Org",
+    "AWS_ACCOUNTS": [
+      {
+        "id": "123456789012",
+        "alias": "root",
+        "assume_role_name": "script-iam-role-access"
+      },
+      {
+        "id": "123456789013",
+        "alias": "prod",
+        "assume_role_name": "script-iam-role-access"
+      }
+    ]
+  }
+}
