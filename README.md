@@ -42,6 +42,19 @@ Lookup IAM Access ID in different AWS Accounts.
 
 `time python3 cli_iam.py find-access-keys --config ${PWD}/config.json --access-keys AKIAXXXXXXXXXXXXX,AKIAYYYYYYYYY |jq .`
 
+## AWS EC2
+
+### Instances
+
+* Dump instances to CSV format with main attributes:
+
+```bash
+$ python cli_ec2.py describe-instances
+instance_id;name;state;ip_private;ip_public
+t2.nano;i-c4b9328afa0b78697;monkey;running;10.10.0.1;11.22.33.44
+
+```
+
 
 ## SETUP
 
